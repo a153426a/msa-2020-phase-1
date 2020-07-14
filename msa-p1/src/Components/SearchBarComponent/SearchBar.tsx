@@ -19,7 +19,7 @@ function SearchBar(props: ISearchBarProps) {
     };
 
     const [EndDate, setEndDate] = useState<Date | null>(
-        new Date('2020-05-18'),
+        new Date(),
     );
 
     const handleEndDateChange = (date: Date | null) => {
