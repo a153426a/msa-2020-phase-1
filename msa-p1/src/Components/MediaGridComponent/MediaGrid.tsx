@@ -56,7 +56,7 @@ function MediaGrid(props: IMediaGridProps) {
     const classes = useStyles();
 
     useEffect(() => {
-        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY&earth_date=' + requestDate)
+        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=hu3iK9f8MJm2OTdFVTFvwkGTYyTWRUXWXE6UN5Rb&earth_date=' + requestDate)
             .then(response => response.json())
             .then(response => {
                 setItemArray(response.photos);
