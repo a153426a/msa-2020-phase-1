@@ -56,7 +56,7 @@ function MediaGrid(props: IMediaGridProps) {
     const classes = useStyles();
 
     useEffect(() => {
-        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=' + process.env.REACT_APP_API_KEY + '&earth_date=' + requestDate)
+        fetch('https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?api_key=DEMO_KEY' + '&earth_date=' + requestDate)
             .then(response => response.json())
             .then(response => {
                 setItemArray(response.photos);
@@ -68,6 +68,7 @@ function MediaGrid(props: IMediaGridProps) {
     return (
         <div className={classes.root}>
             <GridList className={classes.gridList} cellHeight={'auto'} cols={2.5}>
+                {(ItemArray)?}
                 {ItemArray.map((el, index) => (
                 <GridListTile key={"image_"+index}>
                     <img src={el.img_src} alt={el.camera.full_name} />
