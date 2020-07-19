@@ -18,10 +18,10 @@ const theme = createMuiTheme({
 })
 
 function App() {
+  var aWeekAgo = new Date(); 
+  aWeekAgo.setDate(aWeekAgo.getDate()-7);
   const [UserInput, setUserInput] = useState<IUserInput>({
-    SearchQuery: "Mars",
-    StartDate: new Date('2014-08-18T21:11:54'),
-    EndDate: new Date(),
+    StartDate: aWeekAgo,
   });
   function SetUserInput(a: IUserInput) {
     setUserInput(a);    
@@ -31,7 +31,7 @@ function App() {
     <div className="App" >
       <MuiThemeProvider theme={theme}>
           <SearchBar SetUserInput={(a: IUserInput) => SetUserInput(a)}/>
-          <MediaGrid SearchQuery={UserInput.SearchQuery} StartDate={UserInput.StartDate} EndDate={UserInput.EndDate}/>
+          <MediaGrid StartDate={UserInput.StartDate} />
       </MuiThemeProvider>
     </div>
   );
