@@ -7,7 +7,7 @@
 project url is: 
 https://msa-p1-2020-loki.azurewebsites.net
 
-The project build and release pipeline is currently same as the given github version. 
+The project build and release pipeline is currently similar as the given github version. 
 
 I used the Web App application provided in the MSA 2020 github as a starting Web Application, modified it to use Mars Rover Photos APIs. 
 
