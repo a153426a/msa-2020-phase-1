@@ -14,7 +14,7 @@ steps:
 
 - task: CmdLine@2 
   inputs: 
-    script: 'echo REACT_APP_API_KEY = $(NASA_API_KEY) > $(rootDir）/.env' 
+    script: 'echo REACT_APP_API_KEY=$(NASA_API_KEY) > $(rootDir）/.env' 
   displayName: 'Setting environment variables'
 - task: NodeTool@0
   inputs:
