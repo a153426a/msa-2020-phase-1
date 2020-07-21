@@ -5,11 +5,17 @@ trigger:
 variables:
   rootDir: 'msa-p1'
   buildDir: '$(rootDir)/build'
+  NASA_API_KEY: hu3iK9f8MJm2OTdFVTFvwkGTYyTWRUXWXE6UN5Rb
 
 pool:
   vmImage: 'ubuntu-latest'
 
 steps:
+
+- task: CmdLine@2 
+  inputs: 
+    script: 'echo REACT_APP_API_KEY = $(NASA_API_KEY) > $(rootDir）/.env' 
+  displayName: 'Setting environment variables'
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
