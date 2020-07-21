@@ -18,18 +18,26 @@ In order to enable a continuous deployment to deploy your release to Azure for n
 I use create a rule in the artifacts in the release pipeline to trigger a release when a new build on master branch is avaiable.
 
 Azure build pipeline -- done 
+
 Azure release pipeline -- done 
+
 A deployed website on Azure -- done, URL is displayed above 
+
 Description -- done, please read above 
+
 GitHub repo -- done, added. pending invite: https://github.com/a153426a/msa-2020-phase-1/invitations 
 
 # For WebApps: 
 project url is: 
 https://msa-p1-2020-loki.azurewebsites.net 
 Create a new typescript and react web app -- done. Did not start a new app, use the previous one and change a lot of code. 
+
 Connect this application to a different 3rd party REST API -- done. Used Mars Rover Photos APIs from NASA. 
+
 Allow users to input information that will be utilised by the API -- done. User can select different date to view the photo taken. 
+
 Make use of a UI library like Material-UI. -- done. Used the gallery from material ui. 
+
 Utilise source control through GitHub. -- done. Git history avaiable. 
 
 Not done: 
